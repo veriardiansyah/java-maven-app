@@ -22,7 +22,7 @@ pipeline {
           }
       }
           
-      stage('Deploy;) {
+      stage('Deploy') {
             when {
               expression { BRANCH_NAME == 'master' }
             }
