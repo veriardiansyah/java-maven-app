@@ -13,7 +13,7 @@ pipeline {
 
     stage('Build') {
           when {
-              expression { BRANCH_NAME == 'master' }
+              expression { BRANCH_NAME -- 'master' }
           }
           steps {
               script {
