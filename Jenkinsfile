@@ -11,7 +11,7 @@ pipeline {
       }
     }
 
-    stage('Build) {
+    stage('Build') {
           when {
               expression { BRANC_NAME -- 'main' }
           }
